@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/paddingLeft"
+    android:paddingTop="@dimen/padding"
+    android:paddingBottom="@dimen/padding"
+    tools:context=".KeyboardFragment">
+
+    <Button
+        android:id="@+id/btnNumOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNumber"
+        android:text="@string/numOne"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnNumTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickNumber"
+        android:text="@string/numTwo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@+id/btnNumOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickNumber"
+        android:text="@string/numThree"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@+id/btnNumTwo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickOp"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@+id/btnNumThree"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNumber"
+        android:text="@string/numFour"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnNumOne" />
+
+    <Button
+        android:id="@+id/btnNumFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickNumber"
+        android:text="@string/numFive"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnNumFour"
+        app:layout_constraintTop_toBottomOf="@id/btnNumOne" />
+
+    <Button
+        android:id="@+id/btnNumSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickNumber"
+        android:text="@string/numSix"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnNumFive"
+        app:layout_constraintTop_toBottomOf="@id/btnNumOne" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickOp"
+        android:text="@string/sub"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnNumSix"
+        app:layout_constraintTop_toBottomOf="@id/btnNumOne" />
+
+    <Button
+        android:id="@+id/btnNumSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNumber"
+        android:text="@string/numSeven"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnNumFour" />
+
+    <Button
+        android:id="@+id/btnNumEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickNumber"
+        android:text="@string/numEight"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnNumSeven"
+        app:layout_constraintTop_toBottomOf="@id/btnNumFour" />
+
+    <Button
+        android:id="@+id/btnNumNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickNumber"
+        android:text="@string/numNine"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnNumEight"
+        app:layout_constraintTop_toBottomOf="@id/btnNumFour" />
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickOp"
+        android:text="@string/mul"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnNumNine"
+        app:layout_constraintTop_toBottomOf="@id/btnNumFour" />
+
+    <Button
+        android:id="@+id/btnNumZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNumber"
+        android:text="@string/numZero"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnNumSeven" />
+
+    <Button
+        android:id="@+id/btnPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickNumber"
+        android:text="@string/point"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnNumZero"
+        app:layout_constraintTop_toBottomOf="@id/btnNumSeven" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickOp"
+        android:text="@string/div"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnPoint"
+        app:layout_constraintTop_toBottomOf="@id/btnNumSeven" />
+
+    <Button
+        android:id="@+id/btnCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="onClickCE"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnDiv"
+        app:layout_constraintTop_toBottomOf="@id/btnNumSeven" />
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:onClick="equalEvent"
+        android:text="@string/equal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintLeft_toRightOf="@id/btnDiv"
+        app:layout_constraintTop_toBottomOf="@id/btnCE" />
+</androidx.constraintlayout.widget.ConstraintLayout>
